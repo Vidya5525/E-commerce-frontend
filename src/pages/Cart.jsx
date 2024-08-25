@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import PageHeading from "../common/PageHeading";
 import { useDispatch, useSelector } from "react-redux";
-import { getCartTotal, removeItem, updateQuantity } from "../redux/cartSlice.js";
+import { getCartTotal, removeItem, updateQuantity } from "../Redux/cartSlice.js";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { PiMinus, PiPlus } from "react-icons/pi";
-import './Cart.css'; // Import the CSS file
+import './Cart.css';
 
 const Cart = () => {
   const dispatch = useDispatch();
