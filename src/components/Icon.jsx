@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import './Icon.css'; // Import the CSS file
+import './Icon.css'; 
 
 const Icon = () => {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
-import { banners } from "../data/Data";
+import { banners } from "../data/Data.js";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
-import './Banner.css'; // Import the CSS file
+import './Banner.css';
 
 const Banner = () => {
   var settings = {

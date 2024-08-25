@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { products } from "../data/Data";
+import { products } from "../data/Data.js";
 import { BiCart, BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import Heading from "../common/Heading";
 import { Link } from "react-router-dom";
 import Modal from "../common/Model.jsx";
-import './BestSeller.css'; // Import the CSS file
+import './BestSeller.css';
 
 const BestSeller = () => {
   const [isModalOpen, setIsModalOpen] = useState(null);

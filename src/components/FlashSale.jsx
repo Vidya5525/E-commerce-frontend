@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { products } from "../data/Data";
+import { products } from "../data/Data.js";
 import { BiCart } from "react-icons/bi";
 import Heading from "../common/Heading";
 import Modal from "../common/Model.jsx"

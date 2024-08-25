@@ -1,6 +1,6 @@
 import React from "react";
-import { offer } from "../data/Data";
-import './Offer.css'; // Import the CSS file
+import { offer } from "../data/Data.js";
+import './Offer.css'; 
 
 const Offer = () => {
   return (

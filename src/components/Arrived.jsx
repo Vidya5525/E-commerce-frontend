@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { arriveItems } from "../data/Data"
+import { arriveItems } from "../data/Data.js"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

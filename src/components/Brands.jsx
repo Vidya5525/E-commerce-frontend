@@ -1,5 +1,5 @@
 import React from "react";
-import { brands } from "../data/Data";
+import { brands } from "../data/Data.js";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

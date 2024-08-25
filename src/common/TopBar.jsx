@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Icon from "../components/Icon";
-import './TopBar.css';  // Import the CSS file
+import './TopBar.css';
 
 const TopBar = () => {
   return (

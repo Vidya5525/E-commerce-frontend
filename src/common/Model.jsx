@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { PiMinus, PiPlus } from "react-icons/pi";
 import { useDispatch } from "react-redux";
-import { addToCart, getCartTotal, updateQuantity } from "../redux/cartSlice";
+import { addToCart, getCartTotal, updateQuantity } from "../redux/cartSlice.js";
 import { Link } from "react-router-dom";
 import './Modal.css';
 
