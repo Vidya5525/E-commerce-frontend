@@ -1,0 +1,21 @@
+   .icon-container {
+    display: flex;
+  }
+  
+  .icon-link {
+    color: #d1d5db;
+    font-size: 1.25rem;
+    margin-right: 1.5rem; 
+    text-decoration: none; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+    padding: 0.25rem; 
+    border-radius: 0.5rem; 
+  }
+  
+  .icon-link:hover {
+    color: hsla(200, 78%, 53%, 0.564);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-2px); 
+  }
+  

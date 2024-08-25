@@ -1,0 +1,258 @@
+/* Base Styles */
+.cart-container {
+  width: 90%;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.cart-heading {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 800; 
+  margin: 2.5rem 0;
+}
+
+.cart-content {
+  width: 100%;
+}
+
+.empty-cart {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.empty-cart-message {
+  font-size: 1.875rem; 
+  font-weight: 700; 
+  text-transform: uppercase;
+}
+
+.return-to-shopping {
+  border-radius: 1.5rem; 
+  margin-top: 1rem;
+  background-color: #ef4444; 
+  color: #ffffff;
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem; 
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.return-to-shopping:hover {
+  background-color: #dc2626;
+}
+
+.cart-table-container {
+  margin-bottom: 1rem;
+  overflow-x: auto; 
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border-radius: 1rem;
+}
+
+.cart-table-header {
+  background-color: #1e3a8a; 
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  word-wrap: break-word; 
+}
+
+.remove-item {
+  text-align: center;
+}
+
+.remove-button {
+  color: #ef4444; 
+  font-size: 1.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.product-details {
+  text-align: center;
+}
+
+.product-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.product-image {
+  max-height: 100px; 
+  max-width: 100px; 
+  height: auto;      
+  width: auto;       
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+.product-title {
+  font-weight: 600; 
+  font-size: 0.875rem; 
+}
+
+.product-price,
+.product-subtotal {
+  text-align: center;
+}
+
+.product-quantity {
+  text-align: center;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-button {
+  border: 1px solid #e5e7eb; 
+  padding: 0.5rem 1rem; 
+  background: none;
+  border-radius: 0.25rem; 
+  cursor: pointer;
+}
+
+.quantity-display {
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem; 
+  border-radius: 0.25rem; 
+}
+
+.cart-summary {
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px; 
+  border-radius: 1rem; 
+  font-weight: 700; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  background-color: #ffffff;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.summary-heading {
+  margin-bottom: 1rem;
+  font-size: 1.5rem; 
+  text-align: center;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem; 
+}
+
+.checkout-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.checkout-button,
+.continue-shopping-button  {
+  padding: 0.75rem 1.5rem; 
+  background-color: #c94b4b; 
+  border-radius: 0.5rem; 
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover,
+.continue-shopping-button:hover {
+  background-color: #a23e3e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .cart-heading {
+      font-size: 1.875rem; 
+  }
+
+  .cart-summary {
+      width: 100%;
+      max-width: none;
+  }
+
+  .product-image {
+    max-height: 80px;  
+    max-width: 80px;   
+  }
+
+}
+
+@media (max-width: 768px) {
+  .cart-heading {
+      font-size: 1.5rem; 
+  }
+
+  .cart-table-container {
+      overflow-x: scroll; 
+  }
+
+  .cart-table th,
+  .cart-table td {
+      font-size: 0.75rem; 
+      padding: 0.5rem;
+  }
+
+  .product-image {
+    max-height: 60px;  
+    max-width: 60px;  
+  }
+
+ 
+  .quantity-button,
+  .quantity-display {
+      padding: 0.5rem;
+  }
+
+  .summary-heading {
+      font-size: 1.25rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-heading {
+      font-size: 1.25rem; 
+  }
+
+  .product-image {
+    max-height: 50px;  
+    max-width: 50px;   
+  }
+
+  .product-title {
+      font-size: 0.75rem; 
+  }
+
+  .summary-heading {
+      font-size: 1.125rem; 
+  }
+
+  .summary-item {
+      font-size: 0.625rem; 
+  }
+}

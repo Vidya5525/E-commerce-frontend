@@ -1,0 +1,114 @@
+.arrived-container {
+  background-color: #e5e7eb;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  }
+  
+  .arrived-wrapper {
+    width: 83.333333%;
+    margin: 0 auto;
+    overflow: hidden; 
+  }
+  
+  .arrived-header {
+    margin-bottom: 2rem;
+  }
+  
+  .arrived-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrived-title {
+    font-size: 3rem; 
+    font-weight: 600; 
+  }
+  
+  .arrived-arrows {
+    display: flex;
+    font-size: 2.25rem;
+  }
+  
+  .arrow-icon {
+    cursor: pointer;
+    margin-right: 0.5rem;
+    color:black;
+  }
+
+
+  /* Custom Slider css manupulation */
+  
+  .slide-item {
+    margin-right: 1rem;
+    width: 100%; /* Set width to 100% to take the full width of the slide */
+    height: auto; /* Adjust height automatically */
+    display: flex; /* Add display flex to align items */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.slide-item img {
+  width: 100%; /* Make sure image takes up the full width of the slide item */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any inline default margin/padding */
+}
+
+
+.slick-slide {
+  display: flex !important; /* Override inline styles from slick */
+  justify-content: center; /* Center the slide content */
+  align-items: center; /* Center the slide content */
+}
+
+.slick-list {
+  overflow: hidden; /* Ensure no overflow issues */
+}
+
+.slick-slider {
+  position: relative;
+  display: block; /* Make sure it displays as a block-level element */
+  box-sizing: border-box; /* Include padding and border in width and height */
+}
+
+.slick-track {
+  display: flex; /* Make the track a flex container */
+}
+
+.slick-list {
+  overflow: hidden; /* Hide overflowing items */
+  display: block; /* Display as a block-level element */
+}
+
+  
+  .banner-wrapper {
+    margin-top: 1rem; 
+    width: 83.333333%; 
+    margin: 0 auto; 
+  }
+  
+  .banner-image {
+    border-radius: 0.5rem; 
+    width: 100%;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .arrived-title {
+      font-size: 2.25rem; /* smaller font-size for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .arrived-arrows {
+      font-size: 1.875rem; /* smaller font-size for mobile */
+    }
+  
+    .slide-item {
+      margin-right: 0.5rem; /* smaller margin for mobile */
+    }
+  }
+  

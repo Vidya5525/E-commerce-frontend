@@ -1,0 +1,161 @@
+/* Container */
+.midheader-container {
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.midheader-content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+/* List */
+.midheader-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ensure full width to accommodate all elements */
+}
+
+/* Left Section (Logo and Links) */
+.midheader-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.midheader-left .logo img {
+  width: 100px;
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 1rem; /* Space between logo and links */
+}
+
+.midheader-link {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.midheader-link:hover {
+  color: #e3342f;
+}
+
+/* Right Section (Search and Icons) */
+.midheader-right {
+  display: flex;
+  align-items: center;
+  width: 50%; /* Adjust this as needed */
+}
+
+.midheader-search {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  margin-right: 1.25rem;
+  outline: none;
+}
+
+.midheader-icon {
+  position: relative;
+  margin-right: 1.25rem;
+  font-size: 1.5rem;
+  color: #a0aec0;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.midheader-icon:hover {
+  background-color: #f7fafc;
+}
+
+.items_count {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: #e3342f;
+  color: white;
+  border-radius: 50%;
+  padding: 0.25rem;
+  font-size: 0.75rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .midheader-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .midheader-left {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .midheader-right {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .midheader-search {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .midheader-icon {
+    margin-right: 0;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .midheader-list {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .midheader-left {
+    flex-direction: column; /* Stack logo and links vertically */
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .midheader-link {
+    margin-bottom: 0.5rem; /* Space between each link */
+    padding: 0.5rem 0;
+  }
+
+  .midheader-search {
+    width: 90%;
+    margin: 0 auto 1rem;
+  }
+
+  .midheader-right {
+    flex-direction: column; /* Stack icons and search bar vertically */
+    align-items: center;
+    width: 100%;
+  }
+
+  .midheader-icon {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}

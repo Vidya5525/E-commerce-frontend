@@ -1,0 +1,50 @@
+/* Base Styles */
+.notfound-container {
+  width: 90%; /* Adjusted for better responsiveness */
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: 0 auto;
+  padding: 1rem; /* Added padding for better spacing */
+}
+
+.notfound-heading {
+  text-align: center;
+  font-size: 2.25rem; /* Base font size */
+  font-weight: 800; /* Font weight */
+  margin: 2.5rem 0; /* Margin for spacing */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .notfound-container {
+      width: 95%; /* Slightly larger width on medium screens */
+  }
+
+  .notfound-heading {
+      font-size: 2rem; /* Slightly smaller heading for medium screens */
+      margin: 2rem 0; /* Adjusted margin */
+  }
+}
+
+@media (max-width: 768px) {
+  .notfound-container {
+      width: 100%; /* Full width on smaller screens */
+      padding: 0.5rem; /* Reduced padding for smaller screens */
+  }
+
+  .notfound-heading {
+      font-size: 1.75rem; /* Smaller heading for small screens */
+      margin: 1.5rem 0; /* Adjusted margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .notfound-container {
+      width: 100%; /* Full width on extra-small screens */
+      padding: 0.5rem; /* Consistent padding */
+  }
+
+  .notfound-heading {
+      font-size: 1.5rem; /* Smaller heading for very small screens */
+      margin: 1rem 0; /* Adjusted margin */
+  }
+}

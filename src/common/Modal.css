@@ -1,0 +1,268 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  width: 90%;
+  max-width: 800px; /* Set a max width to ensure it doesn't get too wide */
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+/* Modal Close Button */
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  font-size: 1.5rem; /* Increased size for better visibility */
+}
+
+/* Modal Body */
+.modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Add space between elements */
+}
+
+/* Modal Image */
+.modal-image-container {
+  flex: 1;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Limit image size on larger screens */
+}
+
+.tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #e3342f; 
+  color: white;
+  padding: 10px;
+  border-bottom-right-radius: 8px;
+  font-weight: 600;
+}
+
+/* Modal Info */
+.modal-info {
+  flex: 2;
+  text-align: left; /* Align text to the left for better readability */
+}
+
+.modal-title {
+  font-size: 1.75rem; 
+  margin-bottom: 12px; 
+}
+
+.modal-price {
+  color: #e3342f; 
+  font-size: 1.25rem; 
+  margin-bottom: 12px; 
+}
+
+.modal-description {
+  margin-top: 12px; 
+  font-size: 0.875rem; /* Adjust font size */
+}
+
+.modal-shades {
+  display: flex;
+  align-items: center;
+  margin-top: 12px; 
+}
+
+.modal-shades-label {
+  font-weight: 600; 
+  margin-right: 8px; 
+  font-size: 0.875rem; /* Adjust font size */
+}
+
+.modal-select {
+  border: 1px solid #d1d5db; 
+  border-radius: 8px; 
+  padding: 8px;
+  outline: none;
+  font-size: 0.875rem; /* Adjust font size */
+}
+
+.modal-stock {
+  color: #38a169; 
+  margin-top: 12px; 
+}
+
+/* Modal Actions */
+.modal-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 16px; 
+}
+
+.modal-quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.modal-quantity-btn {
+  border: 1px solid #d1d5db; 
+  padding: 8px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.modal-quantity-display {
+  display: inline-block;
+  border: 1px solid #d1d5db; 
+  padding: 8px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.modal-addtocart .modal-btn {
+  padding: 12px 24px;
+  background-color: #3182ce; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-addtocart .modal-btn:hover {
+  background-color: #2b6cb0; 
+}
+
+.modal-category-brand {
+  font-weight: 600; 
+  font-size: 1rem; 
+  margin-top: 24px; 
+}
+
+.modal-category-brand h1 {
+  margin-top: 12px; 
+}
+
+.modal-category-brand span {
+  font-weight: 400; 
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .modal-content {
+      width: 75%;
+  }
+  
+  .modal-body {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .modal-image-container {
+      max-width: 100%;
+      margin-bottom: 16px;
+      display: block;
+  }
+  
+  .modal-info {
+      margin-left: 0;
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+      width: 95%;
+      max-height: 70vh;
+  }
+  
+  .modal-body {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .modal-image-container {
+      margin-bottom: 16px;
+      max-width: 100%;
+  }
+  
+  .modal-info {
+      margin-left: 0;
+      text-align: center;
+  }
+  
+  .modal-title {
+      font-size: 1.5rem; 
+  }
+  
+  .modal-price {
+      font-size: 1rem; 
+  }
+  
+  .modal-shades-label {
+      font-size: 1rem; 
+  }
+  
+  .modal-select {
+      font-size: 1rem;
+  }
+  
+  .modal-description {
+      font-size: 1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+      width: 95%;
+  }
+  
+  .modal-title {
+      font-size: 1.25rem; 
+  }
+  
+  .modal-price {
+      font-size: 0.875rem; 
+  }
+  
+  .modal-description {
+      font-size: 0.75rem; 
+  }
+  
+  .modal-shades-label {
+      font-size: 0.75rem; 
+  }
+  
+  .modal-select {
+      font-size: 0.75rem; 
+  }
+  
+  .modal-quantity-btn {
+      padding: 6px; 
+  }
+  
+  .modal-quantity-display {
+      padding: 6px; 
+  }
+}

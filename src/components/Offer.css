@@ -1,0 +1,23 @@
+/* Offer.css */
+
+.offer-container {
+    margin-top: 2rem; /* mt-8 */
+  }
+  
+  .offer-wrapper {
+    width: 83.3333%; /* w-10/12 */
+    margin-left: auto; /* m-auto */
+    margin-right: auto; /* m-auto */
+  }
+  
+  .offer-grid {
+    display: grid; /* grid */
+    grid-template-columns: repeat(3, 1fr); /* grid-cols-3 */
+    gap: 1.5rem; /* gap-6 */
+  }
+  
+  .offer-item img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  

@@ -1,0 +1,135 @@
+/* General Styles */
+footer {
+  margin-top: 10vmax;
+  padding: 2vmax;
+  background-color: #1a202c;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+/* Left Footer */
+.leftFooter {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vmax; 
+}
+.leftFooter > h4 {
+  font-family: "Roboto";
+  font-size: 1vmax;
+}
+.leftFooter > p {
+  text-align: center;
+  font-size: 1.2vmax;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+}
+.leftFooter > img {
+  width: 10vmax;
+  margin: 1vmax;
+  cursor: pointer;
+}
+
+/* Mid Footer */
+.midFooter {
+  width: 60%;
+  text-align: center;
+}
+.midFooter > h1 {
+  font-size: 4vmax;
+  font-family: "Roboto";
+  color: #eb4034;
+}
+.midFooter > p {
+  max-width: 60%;
+  font-family: "Times New Roman", "Gill Sans MT","Trebuchet MS", sans-serif;
+  margin: 1vmax auto;
+  font-weight: 600;
+}
+
+/* Right Footer */
+.rightFooter {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vmax; 
+}
+.rightFooter > h4 {
+  font-family: "Roboto";
+  font-size: 1.4vmax;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .leftFooter, .midFooter, .rightFooter {
+    width: 100%; 
+    text-align: center;
+  }
+
+  .leftFooter, .rightFooter {
+    margin-bottom: 2vmax; 
+  }
+
+  .leftFooter > img {
+    width: 25vmax; 
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .leftFooter, .midFooter, .rightFooter {
+    width: 100%; 
+    text-align: center;
+  }
+
+  .leftFooter {
+    margin-bottom: 2vmax; 
+  }
+
+  .leftFooter > img {
+    width: 30vmax; 
+  }
+
+  .midFooter > h1 {
+    font-size: 3vmax; 
+  }
+
+  .midFooter > p {
+    max-width: 90%; 
+    font-size: 1.5vmax; 
+  }
+
+  .rightFooter {
+    margin-bottom: 2vmax; 
+  }
+
+  .rightFooter > h4 {
+    font-size: 1.8vmax; 
+  }
+}
+
+@media (max-width: 480px) {
+  .leftFooter > img {
+    width: 40vmax; 
+  }
+
+  .midFooter > h1 {
+    font-size: 2.5vmax; 
+  }
+
+  .midFooter > p {
+    font-size: 1.5vmax; 
+  }
+
+  .rightFooter > h4 {
+    font-size: 1.8vmax; 
+  }
+}
