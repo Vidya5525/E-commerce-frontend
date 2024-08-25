@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { getCartTotal, removeItem } from "../redux/cartSlice.js";
+import { getCartTotal, removeItem } from "../Redux/cartSlice.js";
 import { Link } from "react-router-dom";
 import './Sidebar.css';
 
