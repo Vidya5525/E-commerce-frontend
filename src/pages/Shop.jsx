@@ -5,7 +5,7 @@ import { products } from "../data/Data.js";
 import Modal from "../common/Model.jsx"
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
-import './Shop.css'; // Import the CSS file
+import './Shop.css'; 
 
 const Shop = () => {
   const [isModalOpen, setIsModalOpen] = useState(null);

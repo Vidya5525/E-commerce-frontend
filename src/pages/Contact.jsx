@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeading from "../common/PageHeading";
-import './Contact.css'; // Import the CSS file
+import './Contact.css';
 
 const Contact = () => {
   return (
